@@ -176,6 +176,7 @@ header a {
   .top-container .top-content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
 }
@@ -267,6 +268,8 @@ footer {
   footer {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 footer h1 {
@@ -283,6 +286,7 @@ footer .contact {
   footer .contact {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
 }
