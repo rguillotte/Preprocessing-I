@@ -148,22 +148,41 @@ header {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+@media (max-width: 500px) {
+  header {
+    justify-content: space-around;
+  }
+}
 header a {
   margin-left: 40px;
   text-decoration: none;
   color: black;
 }
+@media (max-width: 500px) {
+  header a {
+    margin: 0 20px;
+  }
+}
 .top-container {
   background-color: #e9f2fc;
   padding: 5% 0;
+  border-radius: 5px;
 }
 .top-container .top-content {
   width: 95%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .top-container .top-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .top-container .top-content img {
   width: 250px;
   height: auto;
+  border-radius: 5px;
 }
 .top-container .top-content h1 {
   font-size: 4.3rem;
@@ -208,6 +227,11 @@ table caption {
   margin-top: 20px;
   margin-bottom: 15px;
 }
+@media (max-width: 500px) {
+  table caption {
+    text-align: center;
+  }
+}
 .middle-container {
   display: flex;
   justify-content: space-between;
@@ -223,12 +247,50 @@ table caption {
 .middle-container .skills {
   width: 45%;
 }
+.middle-container .skills ul {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
 .middle-container .skills li {
   padding: 10px 15px;
   border-top: 1px solid lightgray;
-  border-left: 1px solid lightgray;
-  border-right: 1px solid lightgray;
 }
-.middle-container .skills li:last-child {
-  border-bottom: 1px solid lightgray;
+.middle-container .skills li:first-child {
+  border-top: none;
+}
+footer {
+  margin: 40px 0 0;
+  padding-bottom: 25px;
+  background-color: #e9f2fc;
+}
+@media (max-width: 500px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+footer h1 {
+  margin: 20px auto;
+  text-align: center;
+  padding-top: 25px;
+  font-size: 2rem;
+}
+footer .contact {
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 500px) {
+  footer .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+footer p {
+  padding: 0 10px;
+}
+@media (max-width: 500px) {
+  footer p {
+    padding: 15px 0;
+  }
 }
